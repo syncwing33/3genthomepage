@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3gent - 你的超级设计助手</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <div class="cursor-follower"></div>
+    
+    <div class="background-animation">
+        <canvas id="fireflies"></canvas>
+    </div>
+
+    <header>
+        <nav>
+            <div class="nav-buttons">
+                <button class="sign-in">登录</button>
+                <button class="sign-up">注册</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>
+                <div class="title-animation">
+                    <div class="title-letters">
+                                                                        <div class="letter-build">让创意设计</div>                        <div class="letter-something">从</div>                        <div class="letter-amazing">3gent开始</div>
+                    </div>
+                    <div class="title-line"></div>
+                </div>
+            </h1>
+
+
+            <div class="prompt-container">
+                <div class="prompt-suggestions" id="promptSuggestions">
+                    <span class="suggestion">为我的咖啡店设计一个简约现代的Logo...</span>
+                </div>
+                <textarea id="designPrompt" placeholder="告诉 3gent 为你创建一个令人惊叹的设计..."></textarea>
+            </div>
+
+            <div class="design-preview">
+                <div class="preview-container">
+                    <div class="preview-content">
+                        <!-- 动态内容将通过 JS 插入 -->
+                    </div>
+                    <div class="preview-overlay"></div>
+                </div>
+                <div class="preview-status">
+                    <div class="status-dot"></div>
+                    <span>AI 正在实时生成设计...</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="animations.js"></script>
+</body>
+</html> 
