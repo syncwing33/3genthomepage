@@ -1,6 +1,8 @@
 {
   "version": 2,
   "public": true,
+  "cleanUrls": true,
+  "trailingSlash": false,
   "builds": [
     {
       "src": "public/**/*",
@@ -9,8 +11,12 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/(.+\\.[a-z]+)$",
       "dest": "/public/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/public/index.html"
     }
   ]
 } 
